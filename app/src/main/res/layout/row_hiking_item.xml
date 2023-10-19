@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="@dimen/_5sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/trip_image"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/baseline_forest_24"
+            app:civ_border_width="@dimen/_1sdp"
+            app:civ_border_color="@color/white"
+            android:padding="@dimen/_5sdp"/>
+
+        <TextView
+            android:id="@+id/trip_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toStartOf="@id/trip_add"
+            android:layout_toEndOf="@+id/trip_image"
+            android:text="@string/trip_name_hint"
+            android:textSize="@dimen/_16sdp"/>
+
+        <ImageView
+            android:id="@+id/trip_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/baseline_add_24" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

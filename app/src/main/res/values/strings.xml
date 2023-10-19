@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">M_Hiking_4</string>
+
+    <string name="name_hint">Name of Hike</string>
+    <string name="location_hint">Location</string>
+    <string name="date_hint">Date of Hike</string>
+    <string name="parking_hint">Parking Available (Yes or No)</string>
+    <string name="difficult_hint">Level of Difficult (Easy, Medium, Hard)</string>
+    <string name="description_hint">Add Description</string>
+    <string name="length_hint">Length of Hike (5 miles etc.)</string>
+    <string name="trip_name_hint">Trip Name</string>
+</resources>

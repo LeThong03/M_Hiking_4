@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEditTrip">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/_5sdp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/captureIv"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_forest_24"
+            app:civ_border_color="@color/colorTextSecondary" />
+
+        <EditText
+            android:id="@+id/nameEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_input"
+            android:hint="@string/name_hint"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_10sdp" />
+
+        <EditText
+            android:id="@+id/locationEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_input"
+            android:hint="@string/location_hint"
+            android:inputType="textPersonName"
+            android:padding="@dimen/_10sdp" />
+
+        <EditText
+            android:id="@+id/dateEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_input"
+            android:hint="@string/date_hint"
+            android:inputType="datetime"
+            android:padding="@dimen/_10sdp" />
+
+        <EditText
+            android:id="@+id/parkingEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_input"
+            android:hint="@string/parking_hint"
+            android:inputType="text"
+            android:padding="@dimen/_10sdp" />
+
+        <EditText
+            android:id="@+id/lengthEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_input"
+            android:hint="@string/length_hint"
+            android:inputType="text"
+            android:padding="@dimen/_10sdp" />
+
+        <EditText
+            android:id="@+id/difficultEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/background_input"
+            android:hint="@string/difficult_hint"
+            android:inputType="text"
+            android:padding="@dimen/_10sdp" />
+
+        <EditText
+            android:id="@+id/descriptionEdt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/background_input"
+            android:hint="@string/description_hint"
+            android:inputType="text"
+            android:padding="@dimen/_10sdp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:src="@drawable/baseline_playlist_add_24"
+        app:tint="@color/black"
+        android:backgroundTint="@color/colorTextSecondary"
+        android:elevation="@dimen/_5sdp"
+        app:pressedTranslationZ="@dimen/_10sdp"
+        android:contentDescription="TODO" />
+
+</RelativeLayout>
